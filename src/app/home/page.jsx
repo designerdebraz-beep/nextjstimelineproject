@@ -47,7 +47,7 @@ const page = () => {
         </div>
 
             {/* 4 cards section */}
-            <div className="grid grid-cols-2 gap-7 md:grid-cols-2 pt-20 sm:gap-20 lg:grid-cols-4">
+            {/* <div className="grid grid-cols-2 gap-7 md:grid-cols-2 pt-20 sm:gap-20 lg:grid-cols-4">
                 <div className="card bg-base-100 shadow-md py-5 flex items-center transition duration-300 ease-in-out hover:-translate-y-2 hover:shadow-xl">
                     <div className="card-body text-center">
                         <h2 className="text-5xl font-bold">{fdData.length}</h2>
@@ -72,7 +72,46 @@ const page = () => {
                         <p className="text-xl font-semibold">Interactions This Month</p>
                     </div>
                 </div>
-            </div>
+            </div> */}
+            {/* Responsive Grid Logic:
+    - grid-cols-1: Stacked on mobile
+    - sm:grid-cols-2: 2x2 grid on tablets
+    - lg:grid-cols-4: 4 columns on desktop
+*/}
+<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-7 pt-10 md:pt-20 px-4 max-w-7xl mx-auto">
+    
+    {/* Total Friends Card */}
+    <div className="card bg-white shadow-md py-6 md:py-8 flex items-center border border-slate-50 transition duration-300 ease-in-out hover:-translate-y-2 hover:shadow-xl">
+        <div className="card-body text-center p-4">
+            <h2 className="text-4xl md:text-5xl font-bold text-[#1D3C33]">{fdData.length}</h2>
+            <p className="text-sm md:text-lg font-semibold text-slate-600 mt-2">Total Friends</p>
+        </div>
+    </div>
+
+    {/* On Track Card */}
+    <div className="card bg-white shadow-md py-6 md:py-8 flex items-center border border-slate-50 transition duration-300 ease-in-out hover:-translate-y-2 hover:shadow-xl">
+        <div className="card-body text-center p-4">
+            <h2 className="text-4xl md:text-5xl font-bold text-[#1D3C33]">3</h2>
+            <p className="text-sm md:text-lg font-semibold text-slate-600 mt-2">On Track</p>
+        </div>
+    </div>
+
+    {/* Need Attention Card */}
+    <div className="card bg-white shadow-md py-6 md:py-8 flex items-center border border-slate-50 transition duration-300 ease-in-out hover:-translate-y-2 hover:shadow-xl">
+        <div className="card-body text-center p-4">
+            <h2 className="text-4xl md:text-5xl font-bold text-[#1D3C33]">6</h2>
+            <p className="text-sm md:text-lg font-semibold text-slate-600 mt-2">Need Attention</p>
+        </div>
+    </div>
+
+    {/* Interactions Card */}
+    <div className="card bg-white shadow-md py-6 md:py-8 flex items-center border border-slate-50 transition duration-300 ease-in-out hover:-translate-y-2 hover:shadow-xl">
+        <div className="card-body text-center p-4">
+            <h2 className="text-4xl md:text-5xl font-bold text-[#1D3C33]">12</h2>
+            <p className="text-sm md:text-lg font-semibold text-slate-600 mt-2">Interactions This Month</p>
+        </div>
+    </div>
+</div>
             <br />
             <br />
             <br />
