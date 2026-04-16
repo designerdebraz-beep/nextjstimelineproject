@@ -20,9 +20,9 @@ export default function RootLayout({ children }) {
     <html
       lang="en"
       data-theme="light"
-      className={`h-full antialiased`}
+     
     >
-      <body className=''>
+      <body>
         <Navbar />
         <ContextProvider>
           {children}
