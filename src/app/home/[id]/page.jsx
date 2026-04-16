@@ -33,9 +33,7 @@ const FdDetails = async ({ params }) => {
                             />
                             <h2 className="text-2xl md:text-3xl font-bold text-[#1D3C33]">{fd.name}</h2>
                             <p className="text-sm md:text-base text-slate-500 italic">"{fd.bio}"</p>
-                            <div className="text-xs md:text-sm border border-slate-100 p-2 rounded-lg bg-slate-50">
-                                <span className="font-semibold">Email:</span> {fd.email}
-                            </div>
+                          
                             <div className="flex flex-col gap-2 pt-2">
                                 <p className={`${statusColor[fd.status.toLowerCase()]} w-full sm:w-8/12 mx-auto uppercase tracking-wide`}>
                                     {fd.status}
