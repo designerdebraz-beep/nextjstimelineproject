@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Arian Hasan",
+    "picture": "/image/photo-1.jpeg.jpg",
+    "email": "arian.hasan01@example.com",
+    "days_since_contact": 18,
+    "status": "Overdue",
+    "tags": ["Close friend"],
+    "bio": "Met during a university workshop. Very friendly and supportive.",
+    "goal": 14,
+    "next_due_date": "2026-04-18"
+  },
+  {
+    "id": 2,
+    "name": "Mical don",
+    "picture": "/image/photo-2.jpg",
+    "email": "nusrat.jahan02@example.com",
+    "days_since_contact": 9,
+    "status": "On-Track",
+    "tags": ["Classmate"],
+    "bio": "We know each other from campus events and group study sessions.",
+    "goal": 14,
+    "next_due_date": "2026-04-23"
+  },
+  {
+    "id": 3,
+    "name": "Tamim Rahman",
+    "picture": "/image/photo-9.jpg",
+    "email": "tamim.rahman03@example.com",
+    "days_since_contact": 13,
+    "status": "Almost Due",
+    "tags": ["Friend"],
+    "bio": "Connected through an inter-university tech competition.",
+    "goal": 14,
+    "next_due_date": "2026-04-19"
+  },
+  {
+    "id": 4,
+    "name": "Mahi Akter",
+    "picture": "/image/photo-8jpeg.jpg",
+    "email": "mahi.akter04@example.com",
+    "days_since_contact": 21,
+    "status": "Overdue",
+    "tags": ["Debate"],
+    "bio": "Met in a debate-related event and stayed in touch since then.",
+    "goal": 14,
+    "next_due_date": "2026-04-15"
+  },
+  {
+    "id": 5,
+    "name": "Robber doe",
+    "picture": "/image/photo-7.jpg",
+    "email": "sabbir.ahmed05@example.com",
+    "days_since_contact": 6,
+    "status": "On-Track",
+    "tags": ["Tech friend"],
+    "bio": "Known for sharing coding resources and helpful advice.",
+    "goal": 14,
+    "next_due_date": "2026-04-26"
+  },
+  {
+    "id": 6,
+    "name": "Marcus Johnson",
+    "picture": "/image/photo-5.png.jpg",
+    "email": "farzana.islam06@example.com",
+    "days_since_contact": 12,
+    "status": "Almost Due",
+    "tags": ["Club friend"],
+    "bio": "Met through a student club and often talk about study plans.",
+    "goal": 14,
+    "next_due_date": "2026-04-20"
+  },
+  {
+    "id": 7,
+    "name": "Aisha Patel",
+    "picture": "/image/photo-9.jpg",
+    "email": "rakib.hossain07@example.com",
+    "days_since_contact": 17,
+    "status": "Overdue",
+    "tags": ["Project mate"],
+    "bio": "Worked together on a small academic project and became friends.",
+    "goal": 14,
+    "next_due_date": "2026-04-17"
+  },
+  {
+    "id": 8,
+    "name": "Tom Baker",
+    "picture": "/image/photo-5.png.jpg",
+    "email": "tanjila.noor08@example.com",
+    "days_since_contact": 5,
+    "status": "On-Track",
+    "tags": ["Good friend"],
+    "bio": "A very positive person who loves volunteering and teamwork.",
+    "goal": 14,
+    "next_due_date": "2026-04-27"
+  },
+  {
+    "id": 9,
+    "name": "Imran Kabir",
+    "picture": "/image/photo-1.jpeg.jpg",
+    "email": "imran.kabir09@example.com",
+    "days_since_contact": 13,
+    "status": "Almost Due",
+    "tags": ["Sports friend"],
+    "bio": "We met through a campus sports event and became close.",
+    "goal": 14,
+    "next_due_date": "2026-04-19"
+  },
+  {
+    "id": 10,
+    "name": "Sadia Anjum",
+    "picture": "/image/photo-10.jpg",
+    "email": "sadia.anjum10@example.com",
+    "days_since_contact": 20,
+    "status": "Overdue",
+    "tags": ["Campus friend"],
+    "bio": "Met at a seminar and kept regular communication for study help.",
+    "goal": 14,
+    "next_due_date": "2026-04-16"
+  }
+]

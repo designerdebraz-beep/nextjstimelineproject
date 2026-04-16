@@ -1,0 +1,6 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+*{
+    font-family: "Geist", sans-serif;
+}
