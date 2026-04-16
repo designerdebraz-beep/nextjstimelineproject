@@ -122,7 +122,7 @@ const page = () => {
                 <div>
                     <h1 className="text-4xl font-bold pb-4">Your Friends :</h1>
                 </div>
-                <div className="grid grid-cols-1 gap-4 md:grid-cols-2 pt-20 sm:gap-5 lg:grid-cols-3 lg:gap-7 xl:grid-cols-4">
+                {/* <div className="grid grid-cols-1 gap-4 md:grid-cols-2 pt-20 sm:gap-5 lg:grid-cols-3 lg:gap-7 xl:grid-cols-4">
 
                     {
                         fdData.map((fd) => (
@@ -139,7 +139,59 @@ const page = () => {
                             </Link>
                         ))
                     }
+                </div> */}
+                {/* Responsive Grid Logic:
+    - grid-cols-1: Single column on small mobile
+    - sm:grid-cols-2: Two columns for larger phones/tablets
+    - lg:grid-cols-3: Three columns for laptops
+    - xl:grid-cols-4: Four columns for large desktops
+*/}
+<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 pt-10 md:pt-20 px-4 max-w-[1400px] mx-auto">
+    {
+        fdData.map((fd) => (
+            <Link key={fd.id} href={`/home/${fd.id}`} className="group">
+                <div className="h-full bg-white rounded-2xl shadow-sm border border-slate-100 py-6 px-4 flex flex-col items-center justify-center transition-all duration-300 ease-in-out hover:-translate-y-2 hover:shadow-xl group-hover:border-emerald-100">
+                    <div className="flex flex-col items-center text-center space-y-3 w-full">
+                        
+                        {/* Profile Image with responsive sizing */}
+                        <div className="relative w-20 h-20 md:w-24 md:h-24 mb-2">
+                            <Image 
+                                src={fd.picture} 
+                                fill
+                                className="rounded-full object-cover border-2 border-white shadow-sm" 
+                                alt={`${fd.name}'s profile`}
+                            />
+                        </div>
+
+                        {/* Text Content */}
+                        <div className="space-y-1">
+                            <h3 className="text-xl md:text-2xl font-bold text-slate-800">{fd.name}</h3>
+                            <p className="text-sm md:text-base text-slate-400 font-medium">{fd.days_since_contact}d ago</p>
+                        </div>
+
+                        {/* Tags: Fixed width and flex-wrap to handle multiple tags gracefully */}
+                        <div className="flex flex-wrap justify-center gap-2 py-2">
+                            {Array.isArray(fd.tags) ? fd.tags.map((tag, i) => (
+                                <span key={i} className="text-[10px] md:text-xs font-bold px-3 py-1 bg-[#E7F3EF] text-[#1D3C33] rounded-full uppercase tracking-wider">
+                                    {tag}
+                                </span>
+                            )) : (
+                                <span className="text-[10px] md:text-xs font-bold px-4 py-1.5 bg-[#244D3F] text-white rounded-full uppercase tracking-wider">
+                                    {fd.tags}
+                                </span>
+                            )}
+                        </div>
+
+                        {/* Status Label */}
+                        <p className={`text-[10px] md:text-xs font-bold px-4 py-1 rounded-full uppercase tracking-widest ${statusColor[fd.status]}`}>
+                            {fd.status}
+                        </p>
+                    </div>
                 </div>
+            </Link>
+        ))
+    }
+</div>
             </div>
         </div>
     );
