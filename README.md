@@ -34,3 +34,38 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+............
+Project Name: KeenKeeper.
+
+A short description:
+KeenKeeper is a purposeful relationship management tool designed to help you nurture and maintain meaningful connections. In a world of digital noise, KeenKeeper acts as your "personal shelf" for the people who matter most, ensuring no important relationship fades away due to lack of contact.
+......
+
+ Technologies Used :
+This project is built with a modern tech stack focused on performance, responsiveness, and a premium developer experience:
+
+Framework: Next.js 15 (App Router)
+
+Library: React
+
+Styling: Tailwind CSS (Mobile-first, responsive design)
+
+Icons: React Icons (Heroicons & Lucide sets)
+
+Notifications: React Toastify
+
+Data Handling: JSON-based local database for connection tracking
+
+Recharts
+
+.....
+✨ Key Features
+1. Relationship Health Dashboard
+Visualise the status of all your connections at a glance. Relationships are automatically categorized into On-Track, Almost Due, or Overdue based on your personal contact goals, helping you prioritize who needs attention today.
+
+2. Quick Check-In Actions
+Streamline your outreach with one-click interaction triggers. Whether it's a quick text, a phone call, or a video catch-up, you can log interactions and update relationship statuses instantly through an intuitive, responsive interface.
+
+3. Smart Interaction Timeline
+Keep a chronological history of your social life. The Timeline feature tracks every meetup, call, and message, providing a bird's-eye view of your social patterns and ensuring you never forget the last time you reached out.
