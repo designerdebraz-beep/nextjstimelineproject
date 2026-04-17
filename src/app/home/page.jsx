@@ -47,37 +47,7 @@ const page = () => {
         </div>
 
             {/* 4 cards section */}
-            {/* <div className="grid grid-cols-2 gap-7 md:grid-cols-2 pt-20 sm:gap-20 lg:grid-cols-4">
-                <div className="card bg-base-100 shadow-md py-5 flex items-center transition duration-300 ease-in-out hover:-translate-y-2 hover:shadow-xl">
-                    <div className="card-body text-center">
-                        <h2 className="text-5xl font-bold">{fdData.length}</h2>
-                        <p className="text-xl font-semibold">Total Friends</p><br />
-                    </div>
-                </div>
-                <div className="card bg-base-100 shadow-sm py-5 flex items-center transition duration-300 ease-in-out hover:-translate-y-2 hover:shadow-xl">
-                    <div className="card-body text-center">
-                        <h2 className="text-5xl font-bold">3</h2>
-                        <p className="text-xl font-semibold">On Track</p>
-                    </div>
-                </div>
-                <div className="card bg-base-100 shadow-sm py-5 flex items-center transition duration-300 ease-in-out hover:-translate-y-2 hover:shadow-xl">
-                    <div className="card-body text-center">
-                        <h2 className="text-5xl font-bold">6</h2>
-                        <p className="text-xl font-semibold">Need Attention</p>
-                    </div>
-                </div>
-                <div className="card bg-base-100 shadow-sm py-5 flex items-center transition duration-300 ease-in-out hover:-translate-y-2 hover:shadow-xl">
-                    <div className="card-body text-center">
-                        <h2 className="text-5xl font-bold">12</h2>
-                        <p className="text-xl font-semibold">Interactions This Month</p>
-                    </div>
-                </div>
-            </div> */}
-            {/* Responsive Grid Logic:
-    - grid-cols-1: Stacked on mobile
-    - sm:grid-cols-2: 2x2 grid on tablets
-    - lg:grid-cols-4: 4 columns on desktop
-*/}
+            
 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-7 pt-10 md:pt-20 px-4 max-w-7xl mx-auto">
     
     {/* Total Friends Card */}
@@ -122,31 +92,9 @@ const page = () => {
                 <div>
                     <h1 className="text-4xl font-bold pb-4">Your Friends :</h1>
                 </div>
-                {/* <div className="grid grid-cols-1 gap-4 md:grid-cols-2 pt-20 sm:gap-5 lg:grid-cols-3 lg:gap-7 xl:grid-cols-4">
-
-                    {
-                        fdData.map((fd) => (
-                            <Link key={fd.id} href={`/home/${fd.id}`}>
-                                <div className="h-full card bg-base-100 shadow-md py-5 flex items-center justify-center transition duration-300 ease-in-out hover:-translate-y-2 hover:shadow-xl">
-                                    <div className="card-body text-center space-y-1">
-                                        <Image src={fd.picture} width={80} height={80} className="rounded-full object-cover w-30 h-30 mx-auto" alt="My friends Photos"></Image>
-                                        <p className="text-2xl font-semibold">{fd.name}</p>
-                                        <p className="text-xl">{fd.days_since_contact}d ago</p>
-                                        <p className="text-xs sm:text-xl py-1.25 bg-green-700 text-white rounded-full">{fd.tags}</p>
-                                        <p className={`${statusColor[fd.status]}`}>{fd.status}</p>
-                                    </div>
-                                </div>
-                            </Link>
-                        ))
-                    }
-                </div> */}
-                {/* Responsive Grid Logic:
-    - grid-cols-1: Single column on small mobile
-    - sm:grid-cols-2: Two columns for larger phones/tablets
-    - lg:grid-cols-3: Three columns for laptops
-    - xl:grid-cols-4: Four columns for large desktops
-*/}
-<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 pt-10 md:pt-20 px-4 max-w-[1400px] mx-auto">
+                
+ 
+<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 pt-10 md:pt-20 px-4 max-w-1400px mx-auto">
     {
         fdData.map((fd) => (
             <Link key={fd.id} href={`/home/${fd.id}`} className="group">

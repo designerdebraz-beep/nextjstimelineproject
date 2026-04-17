@@ -9,9 +9,9 @@ import { toast } from "react-toastify";
 const Buttons = ({ fdsData }) => {
     const { setData } = use(fdsContext)
 
-    const notify = () => toast.success(`📞 Call ${fdsData.name}`);
+    const notify = () => toast.success(`📞 Calling ${fdsData.name}`);
     const notify2 = () => toast.success(`💬 Text ${fdsData.name}`);
-    const notify3 = () => toast.success(`🎥 Video Call ${fdsData.name}`);
+    const notify3 = () => toast.success(`🎥 Starting Video Call with ${fdsData.name}`);
 
     // Shared base styles for the action buttons to ensure consistency
     const btnBase = "flex flex-col items-center justify-center gap-2 p-6 md:p-8 lg:p-10 rounded-xl transition-all hover:scale-[1.02] active:scale-95 cursor-pointer border border-transparent hover:border-slate-200 shadow-sm";
